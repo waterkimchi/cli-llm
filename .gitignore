@@ -1,0 +1,54 @@
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Distribution / packaging
+.eggs
+dist
+build
+sdist
+*.egg-info
+
+# Virtual environment
+.venv/
+venv/  # Older virtualenv
+env/   # Another common virtualenv name
+
+# Log files
+*.log
+
+# Temporary files and directories
+tmp/
+temp/
+.tmp*
+*~
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files (adjust as needed)
+.idea/      # PyCharm
+.vscode/    # VS Code
+*.swp       # Vim swap files
+*~          # Backup files (emacs and others)
+
+# Sensitive information (NEVER commit these!)
+.env        # Environment variables (better to use env vars directly)
+# config.ini # If you have a config file, consider adding it here, 
+           # or better, create a default config and have users copy/modify it.
+# my_secrets.json # Any files containing secrets
+
+# Testing
+.pytest_cache
+
+# Coverage data
+.coverage
+coverage.xml
+
+# Installer files (if any)
+*.msi
+*.exe
+
+# Other files you don't want to track
+# example.txt # Add specific files if needed
