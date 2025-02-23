@@ -9,7 +9,6 @@
 <a href="https://github.com/waterkimchi/cli-llm"><img src="https://img.shields.io/github/issues-pr/waterkimchi/cli-llm" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/waterkimchi/cli-llm"><img src="https://img.shields.io/github/issues/waterkimchi/cli-llm" alt="Issues Badge"/></a>
 <a href="https://github.com/waterkimchi/cli-llm"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/waterkimchi/cli-llm?color=2b9348"></a>
-<a href="https://github.com/waterkimchi/cli-llm/blob/master/LICENSE"><img src="https://img.shields.io/github/license/waterkimchi/cli-llm?color=2b9348" alt="License Badge"/></a>
 </div>
 <br>
 
