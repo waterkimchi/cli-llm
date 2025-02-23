@@ -12,6 +12,7 @@
 <a href="https://github.com/waterkimchi/cli-llm/blob/master/LICENSE"><img src="https://img.shields.io/github/license/waterkimchi/cli-llm?color=2b9348" alt="License Badge"/></a>
 </div>
 <br>
+
 A CLI application that leverages LLMs to generate text(currently only Gemini-2.0-flash support) in the command line. Foundationally uses [typer](https://typer.tiangolo.com) library for CLI support and various LLM APIs for the actual service. CLI-LLM achieves to make LLMs more accessbile and customized through its unique command-line UI and to further extend the capabilities.
 
 ## Features
