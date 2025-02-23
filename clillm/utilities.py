@@ -11,8 +11,8 @@ class Utilities:
     def __init__(self):
         pass
 
-    def print_menu(self):
-        print(f"{RED}   ________    ____            __    __    __  ___{RESET}")
+    def print_menu(self, name, version):
+        print(f"\n{RED}   ________    ____            __    __    __  ___{RESET}")
         print(f"{YELLOW}  / ____/ /   /  _/           / /   / /   /  |/  /{RESET}")
         print(f"{GREEN} / /   / /    / /   ______   / /   / /   / /|_/ /{RESET}")
         print(f"{BLUE}/ /___/ /____/ /   /_____/  / /___/ /___/ /  / /{RESET}")
@@ -21,8 +21,5 @@ class Utilities:
         print(
             f"{BLUE}To keep up with the latest news and updates, visit: github.com/waterkimchi/cli-llm"
         )
-        print("Version: 0.1.0")
-        print(f"Maintainer: Hyunsu Lim{RESET}")
-
-    def print_version(self, name="", version=""):
-        print(f"{name} v{version}\n")
+        print(f"Version: {name} v{version}")
+        print(f"Maintainer: Hyunsu Lim{RESET}\n")

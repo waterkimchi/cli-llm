@@ -1,9 +1,10 @@
-from typing import Optional
-
 import typer
 
 from clillm import __app_name__, __version__
-from .callbacks.utilities import Utilities
+from typing import Optional
+
+from .commands import llm
+from .utilities import Utilities
 
 app = typer.Typer(
     help="Access various LLM models in your command-line.",
@@ -24,12 +25,20 @@ def main(
         help="Show the application's version and exit.",
         is_eager=True,
     ),
+    help: Optional[bool] = typer.Option(
+        None,
+        "--help",
+        "--h",
+        "-help",
+        "-h",
+        help="Show list of commands and flags with description.",
+        is_eager=True,
+    ),
 ):
-    util.print_menu()
+    if version:
+        util.print_menu(__app_name__, __version__)
+    elif help:
+        ctx.get_help()
 
 
-@app.command("help")
-def help(
-    ctx: typer.Context,
-):
-    print(ctx.parent.get_help())
+app.add_typer(llm.app, name="llm")
