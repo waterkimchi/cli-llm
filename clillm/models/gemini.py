@@ -1,7 +1,6 @@
 import os
 import typer
 
-from rich import print
 from dotenv import load_dotenv
 from google import genai
 from typing import List, Optional
@@ -33,7 +32,7 @@ def generate_text(
         )
         for chunk in response:
             formatted_chunk = format_text(chunk.text)  # Format the chunk
-            print(formatted_chunk)
+            print(formatted_chunk, end="")
     except Exception as e:
         typer.echo(f"Unexpected Error: {e}")
         raise typer.Exit(1)
