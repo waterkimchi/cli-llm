@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clillm"
+version = "0.1.0"
+requires-python = ">=3.12"
+description = "Access various LLM models in your command-line."
+authors = [{name = "Hyunsu Lim", email = "hyunsul2@uci.edu"}]
+readme = "README.md"
+dependencies = [
+    "typer",
+    "colorama",
+]
+
+[project.scripts]
+clillm = "clillm.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
