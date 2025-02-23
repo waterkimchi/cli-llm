@@ -13,6 +13,7 @@ dependencies = [
     "typer",
     "colorama",
     "rich",
+    "pytest",
 ]
 
 [project.scripts]
