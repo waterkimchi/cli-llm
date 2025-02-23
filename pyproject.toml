@@ -16,6 +16,7 @@ dependencies = [
     "pytest",
     "dotenv",
     "google-genai",
+    "typing",
 ]
 
 [project.scripts]

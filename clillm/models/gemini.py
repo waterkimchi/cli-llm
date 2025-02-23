@@ -1,6 +1,5 @@
 import os
 import typer
-import re
 
 from rich import print
 from dotenv import load_dotenv
