@@ -12,6 +12,7 @@ readme = "README.md"
 dependencies = [
     "typer",
     "colorama",
+    "rich",
 ]
 
 [project.scripts]
