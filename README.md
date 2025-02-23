@@ -1,6 +1,6 @@
 # CLI LLM
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/bcbdd4b2-5eed-4671-8e08-6a94883f4daa" width="40%" alt="DeepSeek-R1" />
+  <img src="https://github.com/user-attachments/assets/bcbdd4b2-5eed-4671-8e08-6a94883f4daa" width="60%" alt="DeepSeek-R1" />
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
