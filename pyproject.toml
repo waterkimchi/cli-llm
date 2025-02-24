@@ -17,6 +17,7 @@ dependencies = [
     "dotenv",
     "google-genai",
     "typing",
+    "pillow",
 ]
 
 [project.scripts]

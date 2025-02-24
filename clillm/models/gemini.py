@@ -1,6 +1,8 @@
 import os
 import typer
 
+from PIL import Image
+
 from dotenv import load_dotenv
 from google import genai
 from typing import List, Optional
@@ -22,7 +24,8 @@ def generate_text(
     if prompt:
         content.append(prompt)
     if images:
-        content.append(image for image in images)
+        for image in images:
+            content.append(Image.open(image))
     if text:
         content.append(tx for tx in text)
 
