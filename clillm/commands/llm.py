@@ -41,6 +41,3 @@ def generate(
         text=input_data.get("text"),
         output=output_file,
     )
-
-    # typer.echo(f"Model: {model}\nPrompt: {prompt}")
-    # typer.echo(response)

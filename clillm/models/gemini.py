@@ -36,12 +36,18 @@ def generate_text(
         response = client.models.generate_content_stream(
             model="gemini-2.0-flash", contents=content
         )
+        if prompt:
+            print(f"Prompt: {prompt}")
+        if images:
+            print(f"Image: {images}")
+        if text:
+            print(f"Text File: {text}")
         print("=========================Reponse Begin=========================")
         for chunk in response:
             formatted_chunk = format_text(chunk.text)
             generated_text += formatted_chunk
             print(formatted_chunk, end="")
-        print("=========================Reponse End=========================")
+        print("\n=========================Reponse End=========================")
     except Exception as e:
         typer.echo(f"Unexpected Error: {e}")
         raise typer.Exit(1)
