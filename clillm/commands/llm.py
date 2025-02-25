@@ -24,6 +24,9 @@ def generate(
     text_files: Optional[List[Path]] = typer.Option(
         None, "--text", "-t", help="Path to text files.", exists=True, dir_okay=False
     ),
+    output_file: Optional[Path] = typer.Option(
+        None, "--output", "-o", help="Path to output file.", dir_okay=True
+    ),
 ):
     input_data = {}
     if image_files:
@@ -33,7 +36,10 @@ def generate(
         input_data["text"] = [open(text_file, "r").read() for text_file in text_files]
 
     gemini.generate_text(
-        prompt=prompt, images=input_data.get("images"), text=input_data.get("text")
+        prompt=prompt,
+        images=input_data.get("images"),
+        text=input_data.get("text"),
+        output=output_file,
     )
 
     # typer.echo(f"Model: {model}\nPrompt: {prompt}")
