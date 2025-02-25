@@ -18,7 +18,7 @@ A CLI application that leverages LLMs to generate text(currently only Gemini-2.0
 ## Features
 
 - **Streaming Output:** Displays generated text as it's produced by the LLM API, providing a more interactive experience.
-- **Multi-Modal Inputs:** Supports text files, images, prompts, string, and
+- **Multi-Modal Inputs:** Supports files, images, prompts, string, and
   more.
 - **Error Handling:** Includes basic error handling to catch and display issues with the API or other parts of the application.
 
@@ -26,8 +26,9 @@ A CLI application that leverages LLMs to generate text(currently only Gemini-2.0
 
 - **Formatted Output:** Uses ANSI escape codes to add colors and symbols to the output, making it easier to read and understand.
 - **Other LLMs:** OpenAI, Claude, Grok, etc.
-- **Add Chat Feature:\*** Continuous chat with a model.
+- **Add Chat Feature:** Continuous chat with a model.
 - **Status:** Listing service status for the models.
+- **Extensions:** Either add more support, or put warning flags
 
 ## Installation
 

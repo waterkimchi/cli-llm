@@ -5,6 +5,7 @@ import time
 from PIL import Image
 
 from dotenv import load_dotenv
+from rich import print
 from google import genai
 from typing import List, Optional
 
