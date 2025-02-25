@@ -1,6 +1,4 @@
-import os
 import typer
-import inspect
 
 from ..models import gemini
 from typing import List, Optional
@@ -19,9 +17,7 @@ def generate(
         "-m",
         help="The LLM model to use (currently only gemini-2.0-flash).",
     ),
-    prompt: str = typer.Argument(
-        "Explain the Universe", help="The text prompt for input."
-    ),
+    prompt: List[str] = typer.Argument(..., help="The text prompt for input."),
     image_files: Optional[List[Path]] = typer.Option(
         None, "--image", "-i", help="Path to image files.", exists=True, dir_okay=False
     ),
