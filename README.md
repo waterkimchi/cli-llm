@@ -1,4 +1,5 @@
 # CLI LLM
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/bcbdd4b2-5eed-4671-8e08-6a94883f4daa" width="60%" alt="DeepSeek-R1" />
 </div>
@@ -16,14 +17,17 @@ A CLI application that leverages LLMs to generate text(currently only Gemini-2.0
 
 ## Features
 
-* **Streaming Output:** Displays generated text as it's produced by the LLM API, providing a more interactive experience.
-* **Various Inputs:**  Can include prompts, image paths, and existing text as context for the models.
-* **Error Handling:** Includes basic error handling to catch and display issues with the API or other parts of the application.
+- **Streaming Output:** Displays generated text as it's produced by the LLM API, providing a more interactive experience.
+- **Multi-Modal Inputs:** Supports text files, images, prompts, string, and
+  more.
+- **Error Handling:** Includes basic error handling to catch and display issues with the API or other parts of the application.
 
 ### TODO:
-* **Formatted Output:** Uses ANSI escape codes to add colors and symbols to the output, making it easier to read and understand.
-* **Other LLMs:** OpenAI, Claude, Grok, etc.
-* **Status:** Listing service status for the models.
+
+- **Formatted Output:** Uses ANSI escape codes to add colors and symbols to the output, making it easier to read and understand.
+- **Other LLMs:** OpenAI, Claude, Grok, etc.
+- **Add Chat Feature:\*** Continuous chat with a model.
+- **Status:** Listing service status for the models.
 
 ## Installation
 
@@ -31,9 +35,11 @@ A CLI application that leverages LLMs to generate text(currently only Gemini-2.0
    ```bash
    git clone https://github.com/waterkimchi/cli-llm.git
    cd cli-llm
+   ```
 2. **Install Script**
    ```bash
    sh install.vm.sh
+   ```
 3. **Set up API Keys**
    ```bash
    cp .env.example .env
@@ -41,14 +47,17 @@ A CLI application that leverages LLMs to generate text(currently only Gemini-2.0
    Add your LLM API keys for each service provided.
 
 ## Usage
+
 ### Virtual Environment
+
 If you followed the above installation proccess, you would have a venv/ directory in the root of the project. Simply run:
+
 ```bash
 source venv/bin/activate
 ```
+
 to enter the vm and run:
+
 ```bash
 clillm -h
 ```
-
-
