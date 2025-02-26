@@ -13,7 +13,7 @@
 </div>
 <br>
 
-A CLI application that leverages LLMs to generate text(currently only Gemini-2.0-flash support) in the command line. Foundationally uses [typer](https://typer.tiangolo.com) library for CLI support and various LLM APIs for the actual service. CLI-LLM achieves to make LLMs more accessbile and customized through its unique command-line UI and to further extend the capabilities.
+A CLI application that leverages LLMs to generate text(currently only Gemini-2.0-flash support) in the command line. Uses [typer](https://typer.tiangolo.com) library for CLI support and various LLM APIs for the actual service. CLI-LLM achieves to make LLMs more accessible and customized through its unique command-line UI and to further extend the capabilities.
 
 ## Features
 
