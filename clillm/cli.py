@@ -3,7 +3,7 @@ import typer
 from clillm import __app_name__, __version__
 from typing import Optional
 
-from .commands import llm
+from .models import gemini
 from .utilities import Utilities
 
 app = typer.Typer(
@@ -41,4 +41,4 @@ def main(
         ctx.get_help()
 
 
-app.add_typer(llm.app, name="llm")
+app.add_typer(gemini.app, name="gemini")
