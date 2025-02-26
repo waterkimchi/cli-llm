@@ -17,6 +17,7 @@ env/   # Another common virtualenv name
 
 # Log files
 *.log
+logs/
 
 # Temporary files and directories
 tmp/
