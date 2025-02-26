@@ -12,7 +12,7 @@ app = typer.Typer()
 @app.command("generate")
 def generate(
     model: str = typer.Option(
-        "gemini",
+        "gemini-2.0-flash",
         "--model",
         "-m",
         help="The LLM model to use (currently only gemini-2.0-flash).",
@@ -36,6 +36,7 @@ def generate(
         input_data["text"] = [open(text_file, "r").read() for text_file in text_files]
 
     gemini.generate_text(
+        model=model,
         prompt=prompt,
         images=input_data.get("images"),
         text=input_data.get("text"),

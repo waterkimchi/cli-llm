@@ -17,6 +17,7 @@ client = genai.Client(api_key=f"{os.getenv('GEMINI_KEY')}")
 
 
 def generate_text(
+    model: str,
     prompt: Optional[str],
     images: Optional[List[str]],
     text: Optional[List[str]],
@@ -34,9 +35,7 @@ def generate_text(
         content.append(tx for tx in text)
 
     try:
-        response = client.models.generate_content_stream(
-            model="gemini-2.0-flash", contents=content
-        )
+        response = client.models.generate_content_stream(model=model, contents=content)
         if prompt:
             print(f"Prompt: {prompt}")
         if images:
