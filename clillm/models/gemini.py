@@ -112,7 +112,7 @@ def join_chat(name: str = typer.Argument(..., help="Name of the chat to join."))
     model = client.chats.create(model="gemini-2.0-flash")
 
     loaded_history = load_chat_from_file(name)
-    print(loaded_history)
+    print("Loading history...")
     model.send_message(f"This was the previous chat log: {loaded_history}")
 
     typer.echo(f"Joined chat '{name}'. Type 'exit' to leave.")
